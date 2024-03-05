@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+body{
+    background-color: #BFE2FD;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    left: 300px;
+}
+
+.container-form {
+    display: flex;
+    background-color: #fff;
+    width: 900px;
+    height: 600px;
+    margin:50px 50px;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.sidebar{
+    padding-top: 30px;
+    height: 900px;
+    width: 1000px;
+    border-radius: 10px;
+    background-image: url('../assets/images/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.step-number{
+    font-weight: 300;
+    color:#ADBEFF;  
+}
+
+.step-name{
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.sidebar span{
+    display: grid;
+    text-transform: uppercase;
+    justify-items: center;
+
+}
+
+.step-container{
+    width: max-content;
+    display: grid;
+    grid-template-columns: 0.4fr 1.8fr;
+    align-items: center;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.step-indicator{
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #fff;
+    border-radius: 50%;
+    margin: 0px 20px;
+}
+
+.step-text{
+    display: grid;
+    justify-items: start;
+}
+
+/* Cards*/
+
+.card{
+    height: 120px;
+    width: 120px;
+    border-radius: 8px;
+    &:hover{
+        height: 125px;
+        width: 125px;
+        background-color: #eee;
+    }
+}
+
+/*Checkbox switch*/
+
+.slider{
+    background-color: #02295A;
+    width: 40px;
+    height: 20px;
+    border: 2px solid #02295A;
+    border-radius: 20px;
+    cursor: pointer;
+    position:relative;
+    
+
+}
+
+.button{
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border:none;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    pointer-events: none;
+}
+
+.toggle-input:checked ~ .slider > .button{
+    left: 22px;
+}
+
+.toggle-input{
+    display: none;
+}
+
+/*Step 1 */
+
+h1{
+    color:#02295A;
+}
+
+p{
+    color:#9699AB;
+}
+
+.input-step1 span{
+    margin-top: 20px; 
+    color:#02295A;
+    font-weight: 700; 
+}
+
+.input-step1{
+    display: grid;
+    margin-top:35px;
+
+}
+.input-step1 input{
+    height: 40px;
+    width: 400px;
+    border: 1px solid #9699AB;
+    border-radius: 8px;
+    display: flex;
+    padding-left:10px;
+    margin-top: 5px;
+    &:focus{
+        outline: none;
+    }
+    
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button{
+    height: 40px;
+    width: 90px;
+    border-radius: 8px;
+    border:none;
+}
+
+.button-container-next{
+    display: flex;
+    justify-content: end;
+}
+.next{
+
+    color:#fff;
+    background-color: #02295A;
+    
+
+}
+.button-container-next button{
+    height: 40px;
+    width: 90px;
+    border-radius: 8px;
+    border:none;
+    color:#fff;
+    background-color: #02295A;
+}
+
